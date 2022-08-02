@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/member-only-front/static/css/main.4a4fa255.css",
+    "main.js": "/member-only-front/static/js/main.932e273a.js",
+    "index.html": "/member-only-front/index.html",
+    "main.4a4fa255.css.map": "/member-only-front/static/css/main.4a4fa255.css.map",
+    "main.932e273a.js.map": "/member-only-front/static/js/main.932e273a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a4fa255.css",
+    "static/js/main.932e273a.js"
+  ]
+}
