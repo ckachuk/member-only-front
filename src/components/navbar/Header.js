@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 const LoggedIn = (props)=>{
     return(
         <div>
-            <Link to='privileges'><Button color="inherit">Privileges</Button></Link>
-            <Link to='/'><Button color="inherit" onClick={props.handleLogout}>Logout</Button></Link>
-            <Link to='post'><Button color="inherit">Create a post</Button></Link>
+            <Link to='member-only-front/privileges'><Button color="inherit">Privileges</Button></Link>
+            <Link to='member-only-front/'><Button color="inherit" onClick={props.handleLogout}>Logout</Button></Link>
+            <Link to='member-only-front/post'><Button color="inherit">Create a post</Button></Link>
         </div>
     )
 }
@@ -19,8 +19,8 @@ const LoggedIn = (props)=>{
 const LoggedOut = (props)=>{
     return(
         <div>
-            <Link to='/login'><Button color="inherit">Login</Button></Link>
-            <Link to='/signup'><Button color="inherit">SignUp</Button></Link>
+            <Link to='member-only-front/login'><Button color="inherit">Login</Button></Link>
+            <Link to='member-only-front/signup'><Button color="inherit">SignUp</Button></Link>
         </div>
     )
 }

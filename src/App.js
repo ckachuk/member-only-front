@@ -107,14 +107,14 @@ function App() {
       <BrowserRouter>
         <Header handleLogout={handleLogout}  currentUser={currentUser}/>
         <Routes>
-          <Route path="/" element={<PostsTable  currentUser={currentUser}/>}/>
-          <Route path="post" element={
+          <Route path="member-only-front/" element={<PostsTable  currentUser={currentUser}/>}/>
+          <Route path="member-only-front/post" element={
             <ProtectedRoute currentUser={currentUser}>
               <CreatePost/>
             </ProtectedRoute>
           }/>
-          <Route path="login" element={<Login handleSubmitLogin= {handleSubmitLogin} handleInputLogin={handleInputLogin}/>}/>
-          <Route path="privileges" element={
+          <Route path="member-only-front/login" element={<Login handleSubmitLogin= {handleSubmitLogin} handleInputLogin={handleInputLogin}/>}/>
+          <Route path="member-only-front/privileges" element={
             <ProtectedRoute currentUser={currentUser}>
               <Privileges/>
             </ProtectedRoute>   
