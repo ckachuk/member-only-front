@@ -22,7 +22,7 @@ const ProtectedRoute = ({ currentUser, children }) => {
 
 const loginUser = async (credentials) =>{
   try{
-    const userLoginResponse = await fetch('http://localhost:5000/login', {
+    const userLoginResponse = await fetch('https://safe-ridge-27689.herokuapp.com/login', {
       method: 'POST',
       body: JSON.stringify({
         username: credentials.username,

@@ -10,7 +10,7 @@ const PostsTable = (props)=>{
     useEffect(()=>{
         const getPosts = async ()=>{
           try{
-            const response = await fetch('http://localhost:5000/posts')
+            const response = await fetch('https://safe-ridge-27689.herokuapp.com/posts')
     
             const data = await response.json();
     

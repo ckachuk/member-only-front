@@ -31,7 +31,7 @@ const SignUp = (props)=>{
         e.preventDefault();
 
         try{
-            const response = await fetch('http://localhost:5000/signup', {
+            const response = await fetch('https://safe-ridge-27689.herokuapp.com/signup', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',

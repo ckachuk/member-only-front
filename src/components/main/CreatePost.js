@@ -28,7 +28,7 @@ const CreatePost = (props)=>{
         e.preventDefault();
 
         try{
-            const response = await fetch('http://localhost:5000/post', {
+            const response = await fetch('https://safe-ridge-27689.herokuapp.com/post', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',

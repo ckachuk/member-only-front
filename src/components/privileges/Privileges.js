@@ -20,7 +20,7 @@ const Privileges = (props)=>{
     const handleSubmitAdminKey =async (e)=>{
         const user = JSON.parse(localStorage.getItem('user'))
 
-        const response = await fetch('http://localhost:5000/privileges/admin', {
+        const response = await fetch('https://safe-ridge-27689.herokuapp.com/privileges/admin', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',

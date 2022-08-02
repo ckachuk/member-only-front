@@ -13,7 +13,7 @@ const Post = (props)=>{
 
     const deletePost = async (e)=>{
         
-        const response = await fetch('http://localhost:5000/post/'+ props.postid + '/delete', {
+        const response = await fetch('https://safe-ridge-27689.herokuapp.com/post/'+ props.postid + '/delete', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
