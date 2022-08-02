@@ -33,7 +33,7 @@ const Header = (props)=>{
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="static">
                     <Toolbar>
-                        <Link to='/'><Typography variant="h6" component="div" >Member only app</Typography></Link>
+                        <Link to='member-only-front/'><Typography variant="h6" component="div" >Member only app</Typography></Link>
                         <Box sx={{ display: "flex", flexDirection:"row-reverse", flexGrow: 1  }}>
                             {loginStatus? (<LoggedIn handleLogout={props.handleLogout}/> ): (<LoggedOut />)}
                         </Box>     
