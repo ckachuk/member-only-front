@@ -76,7 +76,7 @@ function App() {
         localStorage.setItem('token', response['token']);
         localStorage.setItem('user', JSON.stringify(response['user']));
         setCurrentUser(JSON.parse(localStorage.getItem('user')));
-        window.location.href = '/';
+        window.location.href = '/member-only-front';
       })
     }
     else{
@@ -97,7 +97,7 @@ function App() {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     setCurrentUser(null);
-    window.location.href = '/';
+    window.location.href = '/member-only-front';
   }
 
 
@@ -107,7 +107,7 @@ function App() {
       <BrowserRouter>
         <Header handleLogout={handleLogout}  currentUser={currentUser}/>
         <Routes>
-          <Route path="member-only-front/" element={<PostsTable  currentUser={currentUser}/>}/>
+          <Route path="member-only-front" element={<PostsTable  currentUser={currentUser}/>}/>
           <Route path="member-only-front/post" element={
             <ProtectedRoute currentUser={currentUser}>
               <CreatePost/>
@@ -119,7 +119,7 @@ function App() {
               <Privileges/>
             </ProtectedRoute>   
           }/>
-          <Route path="signup" element={<SignUp />}/>
+          <Route path="member-only-front/signup" element={<SignUp />}/>
         </Routes>
       </BrowserRouter>
     </div>

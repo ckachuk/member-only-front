@@ -48,7 +48,7 @@ const CreatePost = (props)=>{
                     text: data.message,
                     icon: 'success',
                     confirmButtonText: 'Ok'
-                }).then((value)=>{ window.location.href = '/'})
+                }).then((value)=>{ window.location.href = 'member-only-front/'})
             }else{
                 Swal.fire({
                     title: 'Error!',

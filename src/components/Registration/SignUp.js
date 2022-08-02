@@ -52,7 +52,7 @@ const SignUp = (props)=>{
                     text: data.message,
                     icon: 'success',
                     confirmButtonText: 'Ok'
-                }).then((value)=>{ window.location.href = '/login'})
+                }).then((value)=>{ window.location.href = 'member-only-front/login'})
             }else{
                 Swal.fire({
                     title: 'Error!',
